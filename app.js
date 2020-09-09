@@ -7,9 +7,10 @@ const bot = new App({
     token: process.env.BOT_TOKEN
 });
 
-/*(async()=>{
+(async()=>{
     await bot.start(process.env.PORT || 3000);
     Promise()
     console.log("Bolt app is running!");
 
-})();*/
+})();
+ 
