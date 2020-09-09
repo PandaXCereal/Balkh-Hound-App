@@ -19,7 +19,7 @@ const composeMessage = (imageURL, text) => {
   };
 };
 const fetchDoggo = () =>
-  axios("https://dog.ceo/api/breed/afghan%20hound/images/random")
+  axios("https://dog.ceo/api/breed/hound-afghan/images/random")
     .then(function(response) {
       // handle success
       return composeMessage(response.data.message, "Random Afghan Image");
