@@ -1,21 +1,24 @@
 {
   "name": "afghan",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pictures of the Afghan Hound",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "ngrok": "ngrok"
+    "ngrok": "ngrok http 3000"
   },
   "author": "Gia Pittman",
   "license": "ISC",
   "dependencies": {
     "@slack/bolt": "^2.3.0",
+  
+    "axios": "^0.20.0",
     "dotenv": "^8.2.0",
     "ngrok": "^3.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
+  
   }
 }
