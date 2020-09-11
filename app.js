@@ -2,7 +2,7 @@ require("dotenv").config();
 const { App } = require("@slack/bolt");
 const axios = require("axios");
 // Auth our app.
-console.log(process.env.BOT_TOKEN);
+
 const bot = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
   token: process.env.BOT_TOKEN
@@ -19,7 +19,7 @@ const composeMessage = (imageURL, text) => {
   };
 };
 const fetchDoggo = () =>
-  axios("https://dog.ceo/api/breed/hound-afghan/images/random")
+  axios("https://dog.ceo/api/breed/hound/afghan/images/random")
     .then(function(response) {
       // handle success
       return composeMessage(response.data.message, "Random Afghan Image");
